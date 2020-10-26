@@ -15,24 +15,44 @@ const myIcon = L.icon({
   popupAnchor: [170, 2],
 });
 
+// create popup
 const popup = L.popup({
   closeButton: false,
   className: "map-popup",
   minWidth: 240,
   maxWidth: 240,
 }).setContent(
-  'Lar das meninas <a href="orphanage.html?id=1" class="choose-orphanage"> <img src="./public/images/arrow-white.svg"> </a>'
+  'Orfanato Santo Antônio <a href="orphanage.html?id=1" class="choose-orphanage"> <img src="./public/images/arrow-white.svg"> </a>'
 );
 
 L.marker([-22.8757, -43.08], { icon: myIcon })
   .addTo(map) // Orfanato Santo Antônio
   .bindPopup(popup);
 
-// Lar da criança Padre Franz Neumair
-var marker = L.marker([-22.8993, -43.0795]).addTo(map);
 
-// Quintal da Ana
-var marker = L.marker([-22.9144, -43.0855]).addTo(map);
 
-// Sempre criança - Ponto de encontro
-var marker = L.marker([-22.9039, -43.0975]).addTo(map);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// exemplos
+// // Lar da criança Padre Franz Neumair
+// var marker = L.marker([-22.8993, -43.0795]).addTo(map);
+
+// // Quintal da Ana
+// var marker = L.marker([-22.9144, -43.0855]).addTo(map);
+
+// // Sempre criança - Ponto de encontro
+// var marker = L.marker([-22.9039, -43.0975]).addTo(map);
