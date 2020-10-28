@@ -194,6 +194,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #ffffff;
 
     transition: background-color .2s;
 }

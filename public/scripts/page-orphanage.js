@@ -1,11 +1,10 @@
 const options = {
-
-    dragging: false,
-    touchZoom: false,
-    doubleClick: false,
-    scrollWheelZoom: false,
-    zoomControl: false
-}
+  dragging: false,
+  touchZoom: false,
+  doubleClick: false,
+  scrollWheelZoom: false,
+  zoomControl: false,
+};
 
 // create map
 const map = L.map("mapid", options).setView([-22.8757, -43.08], 14);
@@ -24,18 +23,29 @@ const myIcon = L.icon({
   popupAnchor: [170, 2],
 });
 
+L.marker([-22.8757, -43.08], { icon: myIcon }).addTo(map); // Orfanato Santo Antônio
 
-L.marker([-22.8757, -43.08], { icon: myIcon })
-  .addTo(map) // Orfanato Santo Antônio
+// image gallery
 
+function selectImage(event) {
+  const button = event.currentTarget;
 
+  // remove todas as classes active
+  const buttons = document.querySelectorAll(".images button");
+  buttons.forEach(function (button) {
+    button.classList.remove("active");
+  });
 
+  // selecionando a image clicada por
+  const image = button.children[0]
+  const imageContainer = document.querySelector(".orphanage-details > img")
 
+  // atualizando o container de imagem
+  imageContainer.src = image.src
 
-
-
-
-
+  // adicionando a classe .active para o botão clicado
+  button.classList.add("active");
+}
 
 
 
