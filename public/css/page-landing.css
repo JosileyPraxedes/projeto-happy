@@ -61,8 +61,20 @@ main h1 {
   animation-delay: 200ms;
 }
 
+/* mobile version */
+@media (max-width: 760px) {
+
+  #container {
+    margin-top: 6rem;
+  }
+
+  .visit {
+    display: inline-block;
+  }
+}
+
 /* Desktop version  */
-@media (min-width: 760px) {
+@media (min-width: 761px) {
   #container {
     padding: 5rem 2rem;
     /* shorthand background: image repeat position / size */
@@ -112,3 +124,4 @@ main h1 {
     margin: initial;
   }
 }
+
