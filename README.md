@@ -1,5 +1,5 @@
 <h4 align="center"> 
-	Proffy
+	Happy
 </h4>
 
 <p align="center">
@@ -13,7 +13,7 @@
 
 ## Sobre o projeto
 
- Proffy - É uma plataforma onde você pode encontrar orfanatos perto de você. 
+ Happy - É uma plataforma onde você pode encontrar orfanatos perto de você. 
 
 Projeto desenvolvido durante a [NLW - Next Level Week](https://nextlevelweek.com/) nos dias 12 a 18/10/2020, oferecido pela [Rocketseat](https://rocketseat.com.br/).
 
